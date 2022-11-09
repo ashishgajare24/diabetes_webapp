@@ -41,13 +41,13 @@ def main():
     # getting the input data from user
     
     Pregnancies = st.slider('Number of times pregnant')
-    Glucose = st.slider('Plasma glucose concentration ')
-    BloodPressure = st.slider('Diastolic blood pressure (mm Hg)')
-    SkinThickness = st.slider('Triceps skin fold thickness (mm)')
-    Insulin = st.slider('2-Hour serum insulin (mu U/ml)')
-    BMI = st.slider('Body mass index (weight in kg/(height in m)^2')
-    DiabetesPedigreeFunction = st.slider('Diabetes pedigree function')
-    Age = st.slider('Age (years)')
+    Glucose = st.text_input('Plasma glucose concentration ')
+    BloodPressure = st.text_input('Diastolic blood pressure (mm Hg)')
+    SkinThickness = st.text_input('Triceps skin fold thickness (mm)')
+    Insulin = st.text_input('2-Hour serum insulin (mu U/ml)')
+    BMI = st.text_input('Body mass index (weight in kg/(height in m)^2')
+    DiabetesPedigreeFunction = st.text_input('Diabetes pedigree function')
+    Age = st.text_input('Age (years)')
     
     # code for Prediction
     diagnosis = ''
