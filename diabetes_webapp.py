@@ -40,14 +40,31 @@ def main():
     
     # getting the input data from user
     
-    Pregnancies = st.slider('Number of times pregnant')
-    Glucose = st.text_input('Plasma glucose concentration ')
-    BloodPressure = st.text_input('Diastolic blood pressure (mm Hg)')
-    SkinThickness = st.text_input('Triceps skin fold thickness (mm)')
-    Insulin = st.text_input('2-Hour serum insulin (mu U/ml)')
-    BMI = st.text_input('Body mass index (weight in kg/(height in m)^2')
-    DiabetesPedigreeFunction = st.text_input('Diabetes pedigree function')
-    Age = st.text_input('Age (years)')
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        Pregnancies = st.text_input('Number of Pregnancies')
+        
+    with col2:
+        Glucose = st.text_input('Glucose Level')
+    
+    with col3:
+        BloodPressure = st.text_input('Blood Pressure value')
+    
+    with col1:
+        SkinThickness = st.text_input('Skin Thickness value')
+    
+    with col2:
+        Insulin = st.text_input('Insulin Level')
+    
+    with col3:
+        BMI = st.text_input('BMI value')
+    
+    with col1:
+        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
+    
+    with col2:
+        Age = st.text_input('Age of the Person')
     
     # code for Prediction
     diagnosis = ''
