@@ -43,28 +43,28 @@ def main():
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        Pregnancies = st.text_input('Number of Pregnancies')
+        Pregnancies = st.number_input('Number of Pregnancies')
         
     with col2:
-        Glucose = st.text_input('Glucose Level')
+        Glucose = st.number_input('Glucose Level')
     
     with col3:
-        BloodPressure = st.text_input('Blood Pressure value')
+        BloodPressure = st.number_input('Blood Pressure value')
     
     with col1:
-        SkinThickness = st.text_input('Skin Thickness value')
+        SkinThickness = st.number_input('Skin Thickness value')
     
     with col2:
-        Insulin = st.text_input('Insulin Level')
+        Insulin = st.number_input('Insulin Level')
     
     with col3:
-        BMI = st.text_input('BMI value')
+        BMI = st.number_input('BMI value')
     
     with col1:
-        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
+        DiabetesPedigreeFunction = st.number_input('Diabetes Pedigree Function value')
     
     with col2:
-        Age = st.text_input('Age of the Person')
+        Age = st.number_input('Age of the Person')
     
     # code for Prediction
     diagnosis = ''
